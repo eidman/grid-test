@@ -1,0 +1,65 @@
+/* reset box sizing*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+header,
+.main-content,
+.sidebar,
+footer {
+  padding: 2em;
+}
+
+header {
+  background: blue;
+}
+
+.main-content {
+  background: red;
+}
+
+.sidebar {
+  background: royalblue;
+}
+
+footer {
+  background: magenta;
+}
+
+/* GRID TEST */
+
+body {
+  display: grid;
+  grid-template-columns: 1.5em minmax(600px, 850px) minmax(200px, 350px) 1.5em;
+}
+
+header,
+footer {
+  grid-column: 1 / 4;
+}
+
+.main-content {
+  grid-column: 2 / 3;
+}
+
+.sidebar {
+  grid-column: 3 / 4;
+}
