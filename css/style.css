@@ -21,6 +21,8 @@ body {
   min-height: 100vh;
 }
 
+/* CONTENT */
+
 header,
 .main-content,
 .sidebar,
@@ -44,7 +46,7 @@ footer {
   background: magenta;
 }
 
-/* GRID TEST */
+/* GRID */
 
 body {
   display: grid;
